@@ -1,0 +1,243 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 3vmin;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+}
+
+#global {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  width: 33%;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: 0.8s;
+}
+
+.nav-item:hover .nav-img {
+  /*animation au survol*/
+  transform: scale(1.1);
+}
+
+.nav-text {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  transform-origin: bottom;
+  bottom: 5%;
+  color: white;
+  font-size: 3vmin;
+  text-shadow: 1px 3px 5px #000000;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* #hamburger {
+  width: 15%;
+  z-index: 4;
+  position: fixed;
+  bottom: 4%;
+  left: 10%;
+  display: none;
+}
+
+#globalmob {
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+.menu {
+  height: 100%;
+  display: none;
+}
+
+#moblist {
+  flex-direction: column;
+  background-color: white;
+}
+
+.nav-item-mob {
+  gap: 5%;
+  margin-left: 6%;
+}
+
+.textmob {
+  font-weight: 350;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#globalmob {
+  display: none;
+}
+
+#propos,
+#photo {
+  display: normal;
+}
+
+#cross {
+  width: 15%;
+  z-index: 3;
+  position: fixed;
+  bottom: 4%;
+  left: 10%;
+  display: none;
+}
+
+#hamburger:target #cross {
+  display: unset;
+}
+
+#hamburger:target {
+  display: unset;
+}
+*/
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+  font-size: 3vmin;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.media {
+  font-family: "uncodeicon" !important;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 20px;
+  margin-top: 50px;
+  font-size: 6vmin;
+}
+
+@media (orientation: portrait) {
+  #hamburger {
+    display: unset;
+  }
+
+  .nav-item {
+    width: 100%;
+    align-items: center;
+  }
+  .nav-text {
+    bottom: auto;
+    font-size: 6vmin;
+  }
+  #selection {
+    flex-direction: column;
+  }
+
+  #footer {
+    font-size: 4vmin;
+  }
+
+  .media {
+    font-size: 7vmin;
+  }
+}
+
+#footer {
+  background-color: #12151b;
+}
+
+@font-face {
+  font-family: "uncodeicon";
+  src: url("../fonts/uncode-icons.eot");
+  src: url("../fonts/uncode-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/uncode-icons.woff2") format("woff2"),
+    url("../fonts/uncode-icons.woff") format("woff"),
+    url("../fonts/uncode-icons.ttf") format("truetype"),
+    url("../fonts/uncode-icons.svg#uncodeicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#footer a {
+  transition: 0.2s;
+}
+
+#footer a:hover {
+  color: #054579;
+}
+
+#copyright {
+  margin-left: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 130;
+  margin-bottom: 20px;
+}
+
+#legals {
+  color: white;
+  text-decoration: none;
+}
+
+#insta::after {
+  content: "\f16d";
+}
+
+#youtube::after {
+  content: "\f16a";
+}
