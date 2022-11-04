@@ -1,0 +1,325 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 35px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p,
+h1,
+h4 {
+  margin: 0;
+  margin-left: 50px;
+}
+
+#text-dev {
+  margin-bottom: 15px;
+}
+
+#all-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#skillflex {
+  margin-right: 50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#jauge {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  display: flex;
+}
+
+#skill-img-veille {
+  width: 100px;
+  margin-bottom: 35px;
+  transition: 0.5s;
+}
+
+#skill-img-proj {
+  width: 100px;
+  transition: 0.5s;
+}
+
+#skill-img-proj:hover,
+#skill-img-veille:hover {
+  transform: scale(1.3);
+}
+
+#jaugeskill {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#jaugelang {
+  display: flex;
+}
+
+.skillbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 110%;
+}
+
+.img-logo {
+  margin: auto;
+  transition: 0.4s;
+}
+
+.img-logo:hover {
+  transform: scale(1.2);
+}
+
+.skillbar::-webkit-progress-bar {
+  background-color: #3d476b;
+  border-radius: 15px;
+}
+
+.skillbar::-webkit-progress-value {
+  background: linear-gradient(269.49deg, #1d8ecd 0%, #052cb4 100%);
+  border-radius: 15px 0px 0px 15px;
+}
+.skillbar::-moz-progress-bar {
+  background: linear-gradient(269.49deg, #1d8ecd 0%, #052cb4 100%);
+  border-radius: 15px 0px 0px 15px;
+  rotate: 90deg;
+}
+
+.pj p {
+  margin: 0;
+  font-weight: 300;
+  color: #0a1724;
+  top: 25%;
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+}
+
+.losange {
+  position: relative;
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  margin-top: 25%;
+  rotate: 45deg;
+  transition: 0.5s;
+}
+
+#list-project {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pj {
+  width: 370px;
+  height: 370px;
+  border: 10px #002d46;
+  border-radius: 20px;
+  background-color: #002d46;
+  margin: 20px;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.losange p {
+  transition: 0.5s;
+}
+
+.losange:hover p {
+  color: #007ef5;
+}
+
+.pj:hover,
+.pj:hover .losange {
+  transform: scale(1.07);
+  rotate: 0deg;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  z-index: 3;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+header,
+#contenu-dev,
+#projects {
+  background-color: #0a1724;
+}
+
+#contenu-multi {
+  background-color: #002d46;
+}
+
+.softbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 150px;
+}
+
+.softbar::-webkit-progress-bar {
+  background-color: #3d476b;
+  border-radius: 15px;
+  rotate: -90deg;
+  translate: 0px 100px;
+}
+
+.softbar::-webkit-progress-value {
+  background: linear-gradient(
+    269.49deg,
+    #02b998 63.02%,
+    #0084a2 90.1%,
+    #004554 100%
+  );
+  border-radius: 15px 0px 0px 15px;
+}
+.softbar::-moz-progress-bar {
+  background: linear-gradient(
+    269.49deg,
+    #02b998 63.02%,
+    #0084a2 90.1%,
+    #004554 100%
+  );
+  border-radius: 15px 0px 0px 15px;
+  rotate: 90deg;
+}
+
+#software {
+  margin-top: 8%;
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 250px;
+  justify-content: space-evenly;
+}
+
+.logo-software {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-logo {
+  width: 150px;
+}
+
+#logo {
+  height: 100%;
+  transition: 0.5s;
+}
+
+#logo:hover {
+  transform: scale(1.2);
+}
+
+#home {
+  height: 50%;
+  margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.media {
+  font-size: 45px;
+}
+
+#footer {
+  position: static;
+  bottom: 0%;
+  width: 100%;
+  font-size: 24px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #12151b;
+}
+
+@media (orientation: portrait) {
+  body {
+    text-align: center;
+  }
+
+  p,
+  h1,
+  h4 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #software {
+    row-gap: 190px;
+    column-gap: 50px;
+  }
+
+  progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100px;
+  }
+
+  .img-logo {
+    width: 100px;
+  }
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#footer a {
+  transition: 0.2s;
+}
+
+#footer a:hover {
+  color: #054579;
+}
+
+#copyright {
+  margin-left: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 130;
+  margin-bottom: 20px;
+}
+
+#legals {
+  color: white;
+  text-decoration: none;
+}
