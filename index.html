@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <title></title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-   <h1>Modification</h1>
-</body>
+  <head>
+    <title>Maxime Randazzo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  </head>
+  <body>
+   
+      <!--Menu avec sélection de catégorie-->
+      <header>
+         <a id="home" href="index.html"> <img id="logo" src="assets/icons/Logo.png"></a>
+      </header>
+      <!--Bandeau non clickable pour stopper animation-->
+      <div id="global">
+      <nav id="navbar">
+        <ul id="selection">
+          <li class="nav-item" id="comp">
+             
+            <a href="competences.html"><img class="nav-img" src="assets/photos/code.jpg" /></a>
+            <div class="overlay"></div>
+            <a href="competences.html" class="nav-text">MES COMPÉTENCES</a>
+          </li>
+
+          <li class="nav-item" id="photo">
+              <a href="#"> <img class="nav-img" src="assets/photos/chamonix.jpg" />
+                <a href="#" class="nav-text">PHOTOGRAPHIE</a>
+          </li>
+
+          <li class="nav-item" id="propos">
+              <a href="propos.html"><img class="nav-img" src="assets/photos/profil.jpg" /></a>
+            <a href="propos.html" class="nav-text">À PROPOS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!--Pour mobile, pas encore implémenté
+      
+<div id="globalmob">
+    <a href="#wrap" id="open"><img id="hamburger" src="assets/icons/hamburger.png"/></a>
+  <div class="menu">
+    <a href="#" id="close">
+    <nav>
+      <ul id="moblist">
+    <li class="nav-item-mob" id="compmob">
+    <a href="#"><p class="textmob">MES COMPÉTENCES</p></a>
+    </li>
+
+    <li class="nav-item-mob" id="proposmob">
+        <a href="#"><p class="textmob">À PROPOS</p></a>
+      </li>
+
+      <li class="nav-item-mob" id="photomob">
+        <a href="#"><p class="textmob">PHOTOGRAPHIE</p></a>
+        </li>
+  </ul>
+</nav>
+
+  <img id="cross" src="assets/icons/croix.png"/>
+</div>
+
+-->
+
+    <!--Footer-->
+    <div id="footer">
+      <div id="social">
+        <a
+          class="media"
+          id="insta"
+          href="https://www.instagram.com/maximerandazzophotos/"
+        ></a>
+        <a
+          class="media"
+          id="youtube"
+          href="https://www.youtube.com/channel/UC-tZa2NSHeHqNvt_giBY4Bw"
+        ></a>
+      </div>
+
+      <div id="copyright">
+        <p>
+          © 2022 Maxime Randazzo | Tous droits réservés. |
+          <a href="#" id="legals">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
