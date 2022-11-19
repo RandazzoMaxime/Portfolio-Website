@@ -179,19 +179,6 @@ a {
   text-decoration: none;
 }
 
-.media {
-  font-size: 45px;
-}
-
-#footer {
-  font-size: 24px;
-  display: flex;
-  height: fit-content;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #12151b;
-}
-
 @media (orientation: portrait) {
   #hamburger {
     display: unset;
@@ -209,30 +196,4 @@ a {
   #selection {
     flex-direction: column;
   }
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-}
-
-#footer a {
-  transition: 0.2s;
-}
-
-#footer a:hover {
-  color: #054579;
-}
-
-#copyright {
-  margin-left: 5px;
-  text-align: center;
-  color: white;
-  font-weight: 130;
-  margin-bottom: 20px;
-}
-
-#legals {
-  color: white;
-  text-decoration: none;
 }

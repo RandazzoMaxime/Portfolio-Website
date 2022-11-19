@@ -10,6 +10,92 @@ html {
   color: white;
 }
 
+/*Formulaire*/
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #043156;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: #054579;
+}
+
+#container-form {
+  visibility: hidden;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  transition: 0.2s;
+  opacity: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeform {
+  max-width: 70px;
+}
+
+#closeform:hover {
+  cursor: pointer;
+}
+
+#formulaire {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #041d31;
+  padding: 20px;
+  width: 100%;
+  max-width: 440px;
+  height: 85%;
+  max-height: 740px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+}
+
+/*Fin de formulaire*/
+
 header {
   height: 100px;
   width: 100%;
@@ -39,9 +125,11 @@ header {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  transition: 0.5s;
 }
 
 #container {
+  align-items: center;
   display: flex;
   margin: 0;
   padding: 0;
@@ -100,6 +188,7 @@ a {
 }
 
 #contact:hover {
+  cursor: pointer;
   transform: scale(1.3);
   border-color: white;
   background-color: white;
@@ -110,50 +199,6 @@ p {
   font-size: calc(1.3rem + 1.5vw);
   text-align: center;
   vertical-align: middle;
-}
-
-/* Footer */
-
-.media {
-  font-size: 45px;
-}
-
-#footer {
-  position: static;
-  bottom: 0%;
-  width: 100%;
-  font-size: 24px;
-  display: flex;
-  height: fit-content;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #12151b;
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-}
-
-#footer a {
-  transition: 0.2s;
-}
-
-#footer a:hover {
-  color: #054579;
-}
-
-#copyright {
-  margin-left: 5px;
-  text-align: center;
-  color: white;
-  font-weight: 130;
-  margin-bottom: 20px;
-}
-
-#legals {
-  color: white;
-  text-decoration: none;
 }
 
 @media (orientation: portrait) {
