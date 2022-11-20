@@ -5,6 +5,7 @@ html {
   margin: 0;
   font-size: 1em;
   color: white;
+  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -29,6 +30,11 @@ p,
 h1 {
   margin: 0;
   margin-left: 50px;
+  margin-right: 50px;
+}
+
+#contenu-dev {
+  height: 100%;
 }
 
 #text-dev {
@@ -74,9 +80,11 @@ h1 {
 }
 
 #jaugeskill {
+  margin-top: 170px;
+  margin-bottom: 190px;
   display: flex;
-  gap: 50px;
-  margin-bottom: 25px;
+  gap: 25px;
+  row-gap: 150px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -115,7 +123,7 @@ h1 {
 .skillbar::-moz-progress-bar {
   background: linear-gradient(269.49deg, #1d8ecd 0%, #052cb4 100%);
   border-radius: 15px 0px 0px 15px;
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .pj p {
@@ -123,20 +131,21 @@ h1 {
   padding-right: 10px;
   font-weight: 300;
   color: #0a1724;
-  top: 25%;
   position: absolute;
   z-index: 100;
   margin: auto;
 }
 
 .losange {
+  display: flex;
+  align-items: center;
   position: relative;
   background-color: white;
   height: 50%;
   width: 50%;
   margin: auto;
   margin-top: 25%;
-  rotate: 45deg;
+  transform: rotate(45deg);
   transition: 0.5s;
 }
 
@@ -171,7 +180,7 @@ h1 {
 .pj:hover,
 .pj:hover .losange {
   transform: scale(1.07);
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 
 header {
@@ -197,13 +206,16 @@ header,
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 150px;
+  height: 25px;
+  translate: -100px 100px;
+  transform: rotate(-90deg);
 }
 
 .softbar::-webkit-progress-bar {
   background-color: #3d476b;
   border-radius: 15px;
-  rotate: -90deg;
-  translate: 0px 100px;
+  transform: rotate(-90deg);
+  transform: translate(0px, 100px);
 }
 
 .softbar::-webkit-progress-value {
@@ -223,7 +235,7 @@ header,
     #004554 100%
   );
   border-radius: 15px 0px 0px 15px;
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 #software {
@@ -264,27 +276,7 @@ a {
   text-decoration: none;
 }
 
-.media {
-  font-size: 45px;
-}
-
-#footer {
-  position: static;
-  bottom: 0%;
-  width: 100%;
-  font-size: 24px;
-  display: flex;
-  height: fit-content;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #12151b;
-}
-
 @media (orientation: portrait) {
-  body {
-    text-align: center;
-  }
-
   #logo {
     height: 150%;
   }
@@ -319,30 +311,4 @@ a {
   .pj p {
     font-size: calc(0.5rem + 1.5vw);
   }
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-}
-
-#footer a {
-  transition: 0.2s;
-}
-
-#footer a:hover {
-  color: #054579;
-}
-
-#copyright {
-  margin-left: 5px;
-  text-align: center;
-  color: white;
-  font-weight: 130;
-  margin-bottom: 20px;
-}
-
-#legals {
-  color: white;
-  text-decoration: none;
 }
