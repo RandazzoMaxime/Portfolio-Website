@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>Maxime Randazzo | Compétences</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/competences.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
   <body>
     <div id="global">
       <header>
         <a id="home" href="index.html">
-          <img id="logo" src="assets/icons/Logo.png"
+          <img id="logo" alt="logo" src="assets/icons/Logo.png"
         /></a>
       </header>
       <div id="all-content">
@@ -25,33 +26,42 @@
             </p>
           </div>
 
-         <div id="jaugeskill"> <div id="jauge">
-            <!--Jauges -->
-            <!--Items jauge-->
-            <div class="jaugelang">
-              <h4>HTML, CSS3</h4>
-              <progress class="skillbar" value="65" max="100">
+          <div id="jaugeskill">
+            <div id="jauge">
+              <!--Jauges -->
+              <!--Items jauge-->
+              <div class="jaugelang">
+                <h4>HTML, CSS3</h4>
+                <progress class="skillbar" value="65" max="100"></progress>
+              </div>
+
+              <div class="jaugelang">
+                <h4>PHP, MYSQL, CMS WORDPRESS</h4>
+                <progress class="skillbar" value="40" max="100"></progress>
+              </div>
             </div>
 
-            <div class="jaugelang">
-              <h4>PHP, MYSQL, CMS WORDPRESS</h4>
-              <progress class="skillbar" value="40" max="100">
+            <div id="skillflex">
+              <!--Skills-->
+              <div class="skills">
+                <img
+                  id="skill-img-veille"
+                  src="assets/icons/veille.png"
+                  alt="Veille Technologique"
+                />
+                <p>Veille technologique</p>
+              </div>
+
+              <div class="skills">
+                <img
+                  id="skill-img-proj"
+                  src="assets/icons/projet.png"
+                  alt="Gestion de Projet"
+                />
+                <p>Gestion de projet</p>
+              </div>
             </div>
           </div>
-
-          <div id="skillflex">
-            <!--Skills-->
-            <div class="skills">
-              <img id="skill-img-veille" src="assets/icons/veille.png" />
-              <p>Veille technologique</p>
-            </div>
-
-            <div class="skills">  
-              <img id="skill-img-proj" src="assets/icons/projet.png" />
-              <p>Gestion de projet</p>
-            </div>
-          </div>
-         </div>
         </div>
 
         <div id="contenu-multi">
@@ -66,28 +76,76 @@
           </div>
 
           <div id="software">
-            <div class="logo-software"><img class="img-logo"src="assets/icons/github.png"><progress class="softbar" value="50" max="100"></div>
-            <div class="logo-software"><img class="img-logo"src="assets/icons/photoshop.png"><progress class="softbar" value="75" max="100"></div>
-            <div class="logo-software"><img class="img-logo"src="assets/icons/lightroom.png"><progress class="softbar" value="85" max="100"></div>
-            <div class="logo-software"><img class="img-logo"src="assets/icons/illustrator.png"><progress class="softbar" value="30" max="100"></div>
-            <div class="logo-software"><img class="img-logo"src="assets/icons/figma.png"><progress class="softbar" value="70" max="100"></div>
-            <div class="logo-software"><img class="img-logo"src="assets/icons/davinci.png"><progress class="softbar" value="65" max="100"></div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/github.png"
+                alt="Github"
+              /><progress class="softbar" value="50" max="100"></progress>
+            </div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/photoshop.png"
+                alt="Adobe Photoshop"
+              /><progress class="softbar" value="75" max="100"></progress>
+            </div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/lightroom.png"
+                alt="Adobe Lightroom"
+              /><progress class="softbar" value="85" max="100"></progress>
+            </div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/illustrator.png"
+                alt="Adobe Illustrator"
+              /><progress class="softbar" value="30" max="100"></progress>
+            </div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/figma.png"
+                alt="Figma"
+              /><progress class="softbar" value="70" max="100"></progress>
+            </div>
+            <div class="logo-software">
+              <img
+                class="img-logo"
+                src="assets/icons/davinci.png"
+                alt="Davinci Resolve"
+              /><progress class="softbar" value="65" max="100"></progress>
+            </div>
           </div>
         </div>
 
         <div id="projects">
-      <div><h1>MES PROJETS</h1></div>
-<div id="list-project"> 
-<div class="pj"><a href="index.html"><div class="losange"><p>Site Portfolio</p></div></a></div>
-<div class="pj"><div class="losange"><p>Projet Numéro 2</p></div></div>
-<div class="pj"><div class="losange"><p>Projet Numéro 3</p></div></div>
-<div class="pj"><div class="losange"><p>Projet Numéro 4</p></div></div>
-<div class="pj"><div class="losange"><p>Projet Numéro 5</p></div></div>
-<div class="pj"><div class="losange"><p>Projet Numéro 6</p></div></div>
-</div>
+          <div><h1>MES PROJETS</h1></div>
+          <div id="list-project">
+            <div class="pj">
+              <a href="index.html"
+                ><div class="losange"><p>Site Portfolio</p></div></a
+              >
+            </div>
+            <div class="pj">
+              <div class="losange"><p>Projet Numéro 2</p></div>
+            </div>
+            <div class="pj">
+              <div class="losange"><p>Projet Numéro 3</p></div>
+            </div>
+            <div class="pj">
+              <div class="losange"><p>Projet Numéro 4</p></div>
+            </div>
+            <div class="pj">
+              <div class="losange"><p>Projet Numéro 5</p></div>
+            </div>
+            <div class="pj">
+              <div class="losange"><p>Projet Numéro 6</p></div>
+            </div>
+          </div>
         </div>
-
-
       </div>
       <!--Footer-->
       <div id="footer">

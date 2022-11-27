@@ -11,10 +11,6 @@ body {
   color: white;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 header {
   height: 10%;
   width: 100%;

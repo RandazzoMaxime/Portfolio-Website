@@ -242,11 +242,12 @@ header,
   margin-top: 8%;
   flex-wrap: wrap;
   display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 250px;
   row-gap: 200px;
   justify-content: space-evenly;
+  column-gap: 25px;
 }
 
 .logo-software {
@@ -288,11 +289,6 @@ a {
     margin-right: 20px;
   }
 
-  #software {
-    row-gap: 190px;
-    column-gap: 50px;
-  }
-
   .softbar {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -312,3 +308,5 @@ a {
     font-size: calc(0.5rem + 1.5vw);
   }
 }
+
+
