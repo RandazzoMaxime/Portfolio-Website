@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>Maxime Randazzo</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
   </head>
   <body>
-   
-      <!--Menu avec sélection de catégorie-->
-      <header>
-         <a id="home" href="index.html"> <img id="logo" src="assets/icons/Logo.png"></a>
-      </header>
-      <!--Bandeau non clickable pour stopper animation-->
-      <div id="global">
+    <!--Bandeau non clickable pour stopper animation-->
+    <header>
+      <a id="home" href="index.html">
+        <img id="logo" alt="logo" src="assets/icons/Logo.png"
+      /></a>
+    </header>
+
+    <!--Menu avec sélection de catégorie-->
+    <div id="global">
       <nav id="navbar">
         <ul id="selection">
           <li class="nav-item" id="comp">
-             
-            <a href="competences.html"><img class="nav-img" src="assets/photos/code.jpg" /></a>
+            <a href="competences.html"
+              ><img
+                class="nav-img"
+                alt="Illustration ompétences"
+                src="assets/photos/code.jpg"
+            /></a>
+
             <div class="overlay"></div>
             <a href="competences.html" class="nav-text">MES COMPÉTENCES</a>
           </li>
 
           <li class="nav-item" id="photo">
-              <a href="#"> <img class="nav-img" src="assets/photos/chamonix.jpg" />
-                <a href="#" class="nav-text">PHOTOGRAPHIE</a>
+            <a href="photographie.php">
+              <img
+                class="nav-img"
+                src="assets/photos/chamonix.jpg"
+                alt="Aiguille du midi - Chamonix"
+            /></a>
+
+            <a href="photographie.php" class="nav-text">PHOTOGRAPHIE</a>
           </li>
 
           <li class="nav-item" id="propos">
-              <a href="propos.html"><img class="nav-img" src="assets/photos/profil.jpg" /></a>
+            <a href="propos.html"
+              ><img
+                class="nav-img"
+                alt="Maxime Randazzo"
+                src="assets/photos/profil.jpg"
+            /></a>
+
             <a href="propos.html" class="nav-text">À PROPOS</a>
           </li>
         </ul>
       </nav>
     </div>
-    
+
     <!--Pour mobile, pas encore implémenté
       
 <div id="globalmob">

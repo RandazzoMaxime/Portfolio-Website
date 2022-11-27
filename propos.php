@@ -13,19 +13,17 @@
         document.getElementById(id).style.visibility = "visible";
         document.getElementById("global").style.filter = "blur(5px)";
         document.getElementById(id).style.opacity = "100%";
-        document.getElementById("body").style.overflow = "hidden";
       }
       function closeform(id) {
         document.getElementById("submit").style.transition = "none";
         document.getElementById(id).style.opacity = "0%";
         document.getElementById(id).style.visibility = "hidden";
         document.getElementById("global").style.filter = "blur(0px)";
-        document.getElementById("body").style.overflow = "auto";
       }
     </script>
   </head>
 
-  <body id="body">
+  <body>
     <div id="container-form">
       <div id="formulaire">
         <img
@@ -34,7 +32,7 @@
           onclick="closeform('container-form')"
         />
         <h1>Formulaire de contact</h1>
-        <form action="mail.php" method="post" id="scroll">
+        <form action="propos.php">
           <label for="fname">Nom & prénom</label>
           <input
             type="text"
@@ -67,8 +65,42 @@
             style="height: 100px;"
           ></textarea>
 
-          <input id="submit" type="submit" value="Envoyer" name="valider" />
+          <input id="submit" type="submit" value="Envoyer" name="valider"/>
         </form>
+<?php 
+
+  
+
+if(isset($_POST['message']))
+{
+  $fname=$_POST['firstname'];
+  $sujet=$_POST['sujet'];
+  $email=$_POST['email'];
+  $message=$_POST['message'];
+
+  if(empty($fname))
+         $send='<div class="erreur">Le champ Nom & prénom est vide.</div>';
+      elseif(empty($sujet))
+         $message='<div class="erreur">Le sujet est vide.</div>';
+      elseif(empty($email))
+         $message='<div class="erreur">Veuillez renseigner un email.</div>';
+      elseif(empty($message))
+         $message='<div class="erreur">Vous avez indiqué un message vide.</div>';
+  else{
+  //on vérifie que l'adresse est correcte
+  if(!preg_match("#^[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?@[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?\.[a-z]{2,}$#i",$email)){
+    echo "L'adresse mail entrée est incorrecte";
+}
+else{
+include(mail.php);
+
+  }
+}
+
+}
+
+?>
+
       </div>
     </div>
     <div id="global">
