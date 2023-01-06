@@ -4,29 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/photo.css">
-  <link rel="stylesheet" type="text/css" href="css/simple-lightbox.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css" />
   <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="js/jquery.nanogallery2.min.js"></script>
+
   <title></title>
-  <script type="text/javascript">document.oncontextmenu = function() {
-    alert('La protection des images est activé sur cette page');
-  return false;
-  </script>
 </head>
-<body>  
+<body >  
  <!--Bandeau non clickable pour stopper animation-->
     <header>
-      <a id="home" href="index.html">
+      <a class="section textsec" href="competences.html">Mes compétences</a>
+      <a class="section" id="home" href="index.html">
         <img id="logo" alt="logo" src="assets/icons/Logo.png"
       /></a>
+      <a class="section textsec" href="propos.html">À propos</a>
     </header>
-<div class="gallery">
+    <div class="title"><h1>Mon travail</h1></div>
+  
+<div class="portfoliogallery" data-nanogallery2='{
+        "itemsBaseURL": "https://maximerandazzo.fr/",
+        "thumbnailWidth":   "auto",
+        "thumbnailHeight":  "1000",
+        "thumbnailDisplayOutsideScreen" : "false",
+        "eventsDebounceDelay" : "20",
+        "thumbnailGutterWidth" : "0",
+        "thumbnailGutterHeight" : "0",
+        "thumbnailBorderHorizontal" : "0",
+        "thumbnailBorderVertical" : "0",
+        "thumbnailDisplayInterval" : "20",
+        "thumbnailHoverEffect2" : "imageScaleIn80",
+        "thumbnailLabel": {
+          "position": "overImageOnBottom"
+        },
+        "thumbnailAlignment": "center",
+   "viewerTools":     {
+        "topLeft":    "pageCounter",
+        "topRight":   "previousButton, nextButton, fullscreenButton, closeButton"
+      },   
+        "thumbnailOpenImage": true
+      }'>
 
 <?php
 $files = glob('assets/photos/portfolio/*.{jpg,png}', GLOB_BRACE);
+$fichiers = array();
+$i=0;
 foreach($files as $file) {
+$fichiers[$i]=$file;
+ $i++;
+}
 
- echo "<a data-fslightbox href='".$file."'><div class='contain-img'><img class='img-portfolio' src=".$file."></div></a>";
+   rsort($fichiers);
+
+foreach($fichiers as $file)
+{
+  
+
+  echo "<a href='".$file."' data-ngthumb='".$file."'></a>";
 }
 
 ?>
@@ -56,7 +93,5 @@ foreach($files as $file) {
         </p>
       </div>
     </div>
-
-<script src="js/fslightbox.js"></script>
 </body>
 </html>
