@@ -1,3 +1,5 @@
+
+
 /* Footer */
 
 .media {
@@ -10,7 +12,6 @@
 }
 
 #footer {
-  position: static;
   bottom: 0%;
   width: 100%;
   display: flex;

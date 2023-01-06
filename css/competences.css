@@ -9,6 +9,16 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.blue1
+{
+  background-color: white;
+}
+
+.blue2
+{
+  background-color: #0a1724;
+}
+
 p {
   font-size: calc(1.1rem + 1.5vw);
 }
@@ -137,16 +147,24 @@ h1 {
 }
 
 .losange {
+  border-width: 0px;
+  border-color: white;
+  border-style: solid;
   display: flex;
   align-items: center;
   position: relative;
-  background-color: white;
   height: 50%;
   width: 50%;
   margin: auto;
   margin-top: 25%;
   transform: rotate(45deg);
   transition: 0.5s;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,1);
+}
+
+.portfolio{
+  background-image: url(../assets/photos/web.jpg);
 }
 
 #list-project {
@@ -173,23 +191,58 @@ h1 {
   transition: 0.5s;
 }
 
+
 .losange:hover p {
-  color: #007ef5;
+  color: white;
+
+}
+
+.losange:hover{
+  border-width: 3px;
+  border-radius: 5px;
+  opacity: 1;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,0);
+
 }
 
 .pj:hover,
 .pj:hover .losange {
-  transform: scale(1.07);
+
   transform: rotate(0deg);
 }
 
+/* Header */
+
 header {
-  height: 100px;
+  height: 10%;
   width: 100%;
-  z-index: 3;
+  z-index: 200;
   position: static;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 60px;
+  transition: 0.5s
+}
+
+#logo:hover, .textsec:hover {
+  transform: scale(1.15);
+}
+
+.section{
+  width: 30%;
+  text-align: center;
+}
+
+.textsec {
+  font-size: calc(1rem + 1vw);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 header,
@@ -199,7 +252,8 @@ header,
 }
 
 #contenu-multi {
-  background-color: #002d46;
+  background-color: white;
+  color: #002d46;
 }
 
 .softbar {
@@ -207,6 +261,7 @@ header,
   -moz-appearance: none;
   width: 150px;
   height: 25px;
+  transform-origin: center;
   translate: -100px 100px;
   transform: rotate(-90deg);
 }
@@ -253,16 +308,15 @@ header,
 .logo-software {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  min-width: 20%;
 }
 
 .img-logo {
   width: 150px;
 }
 
-#logo {
-  height: 125%;
-  transition: 0.5s;
-}
+
 
 #logo:hover {
   transform: scale(1.2);
@@ -277,11 +331,20 @@ a {
   text-decoration: none;
 }
 
+@media(max-width: 1215px)
+{
+  #jaugeskill
+{
+  margin-top: 50px;
+ row-gap: 75px;
+}
+
+}
+
 @media (orientation: portrait) {
   #logo {
     height: 150%;
   }
-
   p,
   h1,
   h4 {
@@ -307,6 +370,15 @@ a {
   .pj p {
     font-size: calc(0.5rem + 1.5vw);
   }
+
+  .losange{
+    transform: rotate(0deg);
+  }
+
+  .pj:hover,
+.pj:hover .losange {
+  transform: scale(1.1);
+
 }
 
-
+}
