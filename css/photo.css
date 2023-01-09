@@ -12,6 +12,8 @@ body {
 
 }
 
+
+
 h1 {
   
 text-align: center;
@@ -27,6 +29,8 @@ text-shadow: black 1px 0 5px;
   margin: 0 !important;
 }
 
+
+
 .title{
   display: flex;
   justify-content: center;
@@ -38,20 +42,11 @@ text-shadow: black 1px 0 5px;
   height: 100vh;
 }
 
-header {
-  height: 10%;
-  width: 100%;
-  z-index: 200;
-  position: static;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
+
 
 #logo {
-  height: 60px;
+  height: 75px;
   transition: 0.3s;
 }
 
@@ -59,18 +54,7 @@ header {
   transform: scale(1.15);
 }
 
-.section{
-  width: 30%;
-  text-align: center;
-}
 
-.textsec {
-  font-size: calc(1rem + 1vw);
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
 
 .media{
   text-decoration: none;
@@ -117,3 +101,17 @@ filter: brightness(0.5);
   }
 }
 
+.nGY2ConsoleParent
+{
+  margin: 0px !important;
+}
+
+.nGY2, .nGY2GallerySub
+{
+  display: block !important;
+}
+
+.nGY2GThumbnailImage 
+{
+  transition: all 10ms ease-in-out !important;
+}

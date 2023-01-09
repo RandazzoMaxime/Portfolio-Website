@@ -4,19 +4,31 @@
     <title>Maxime Randazzo | Compétences</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/icons/Logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
     <link rel="stylesheet" type="text/css" href="css/competences.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
   <body>
     <div id="global">
-      <header>
-      <a class="section textsec" href="photographie.php">Photographie</a>
-      <a class="section" id="home" href="index.html">
-        <img id="logo" alt="logo" src="assets/icons/Logo.png"
-      /></a>
-      <a class="section textsec" href="propos.html">À propos</a>
-    </header>
+     
+<header>
+      <a  id="home" href="index.html">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89" style="fill: white;"><g id="a"/><g id="b"><g><path class="c" d="M310.93,226.65c0-2.85-2.32-5.16-5.18-5.14l-62.76,.39c-3.35,0-4.16,.91-5.03,3.39l-47.87,136.22c-.66,1.89-3.32,1.91-4.02,.04l-50.98-136.55c-1.25-3.48-5.71-4.12-9.11-4.1h-60.48c-1.18,0-2.14,.96-2.14,2.14v410.32c0,1.18,.96,2.14,2.14,2.14h61.55c1.18,0,2.14-.96,2.14-2.14v-233.79c0-2.39,3.33-2.98,4.15-.73,17.16,47.27,34.28,94.44,51.6,142.15,.68,1.87,3.32,1.88,4.01,.02,16.85-44.84,33.36-88.78,49.85-132.66l5.9,1.07,.19,224c0,1.18,.96,2.14,2.14,2.14l61.72-.03c1.18,0,2.14-.96,2.14-2.14l.02-406.74Z"/><path class="c" d="M450.39,568.79s-12.89-30.64-19.25-46c-1.9-4.58-10.04-6.17-10.04-6.17-65.17-.81-75.02,4.07-75.69-28.05-.17-8.43,.54-33.69,.54-33.69,.15-8.18,4.71-10.97,13.09-10.99,21.33-.04,42.66,.03,63.99-.03,40.75,1.78,72.43-36.44,67.62-76.03-9.54-73.56-79.23-66.41-135.69-66.11-12.05,.11-16.64-4.82-16.94-17.45-.34-14.49-.1-28.99-.06-43.49,.02-8.24,4.42-19.94,12.59-19.9h87.66c132.63,0,172.08,202.47,59.57,275.95,18.9,45.76,41.18,90.18,59.38,138.07l-78.16,.12-28.61-66.23Z"/></g></g></svg></a>
+       
+       <div id="menuToggle">
+    <input type="checkbox" id="check" onchange="color()" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a class="MenuTitle" href="propos.html"><li>À propos</li></a>
+      <a class="MenuTitle" href="photographie.php"><li>Photographie</li></a>
+    </ul>
+  </div>
+      </header>
+
       <div id="all-content">
         <div id="contenu-dev" class="content">
           <div id="text-dev">
@@ -34,12 +46,12 @@
               <!--Items jauge-->
               <div class="jaugelang">
                 <h4>HTML, CSS3</h4>
-                <progress class="skillbar" value="65" max="100"></progress>
+                <progress class="skillbar" value="75" max="100"></progress>
               </div>
 
               <div class="jaugelang">
                 <h4>PHP, MYSQL, CMS WORDPRESS</h4>
-                <progress class="skillbar" value="40" max="100"></progress>
+                <progress class="skillbar" value="50" max="100"></progress>
               </div>
             </div>
 
@@ -98,42 +110,42 @@
                 class="img-logo"
                 src="assets/icons/github.png"
                 alt="Github"
-              /><progress class="softbar" value="50" max="100"></progress>
+              /><progress class="softbar" value="65" max="100"></progress>
             </div>
             <div class="logo-software">
               <img
                 class="img-logo"
                 src="assets/icons/photoshop.png"
                 alt="Adobe Photoshop"
-              /><progress class="softbar" value="75" max="100"></progress>
+              /><progress class="softbar" value="80" max="100"></progress>
             </div>
             <div class="logo-software">
               <img
                 class="img-logo"
                 src="assets/icons/lightroom.png"
                 alt="Adobe Lightroom"
-              /><progress class="softbar" value="85" max="100"></progress>
+              /><progress class="softbar" value="90" max="100"></progress>
             </div>
             <div class="logo-software">
               <img
                 class="img-logo"
                 src="assets/icons/illustrator.png"
                 alt="Adobe Illustrator"
-              /><progress class="softbar" value="30" max="100"></progress>
+              /><progress class="softbar" value="60" max="100"></progress>
             </div>
             <div class="logo-software">
               <img
                 class="img-logo"
                 src="assets/icons/figma.png"
                 alt="Figma"
-              /><progress class="softbar" value="70" max="100"></progress>
+              /><progress class="softbar" value="75" max="100"></progress>
             </div>
             <div class="logo-software">
               <img
                 class="img-logo"
                 src="assets/icons/davinci.png"
                 alt="Davinci Resolve"
-              /><progress class="softbar" value="65" max="100"></progress>
+              /><progress class="softbar" value="75" max="100"></progress>
             </div>
           </div>
         </div>
@@ -202,5 +214,17 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+//Changement de couleur du logo au déploiement
+      function color() {
+      var checkBox = document.getElementById("check");
+  if (checkBox.checked == true) {
+    document.getElementById("logo").style.fill = "black";
+  } else {
+    document.getElementById("logo").style.fill = "white";
+  }
+}
+</script>
   </body>
 </html>

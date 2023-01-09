@@ -177,8 +177,8 @@ h1 {
 }
 
 .pj {
-  width: 370px;
-  height: 370px;
+  width: 330px;
+  height: 330px;
   border: 10px #002d46;
   border-radius: 20px;
   background-color: #002d46;
@@ -213,39 +213,15 @@ h1 {
 
 /* Header */
 
-header {
-  height: 10%;
-  width: 100%;
-  z-index: 200;
-  position: static;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header{
+  position: unset !important;
+  background-color: #0A1724 !important;
 }
 
-#logo {
-  height: 60px;
-  transition: 0.5s
+#logo{
+  height: 75px;
 }
 
-#logo:hover, .textsec:hover {
-  transform: scale(1.15);
-}
-
-.section{
-  width: 30%;
-  text-align: center;
-}
-
-.textsec {
-  font-size: calc(1rem + 1vw);
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-header,
 #contenu-dev,
 #projects {
   background-color: #0a1724;
@@ -322,10 +298,6 @@ header,
   transform: scale(1.2);
 }
 
-#home {
-  height: 50%;
-  margin-top: 25px;
-}
 
 a {
   text-decoration: none;
@@ -342,9 +314,7 @@ a {
 }
 
 @media (orientation: portrait) {
-  #logo {
-    height: 150%;
-  }
+
   p,
   h1,
   h4 {

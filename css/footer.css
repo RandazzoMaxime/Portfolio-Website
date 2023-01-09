@@ -1,4 +1,46 @@
+* {
+  color: white !important;
+}
 
+body {
+  color: white !important;
+  animation: fadeIn 1s;
+  overflow-x: hidden;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (orientation: portrait)
+{
+  .textsec {
+    display: none;
+  }
+  header{
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+}
 
 /* Footer */
 
