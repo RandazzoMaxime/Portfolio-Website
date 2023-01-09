@@ -13,36 +13,23 @@ html {
 /* Header */
 
 header {
-  height: 10%;
+  position: relative;
   width: 100%;
-  z-index: 200;
-  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
+  background-color: #0A1724 !important;
 }
 
-#logo {
-  height: 60px;
-  transition: 0.3s;
+#home{
+  height :100%;
+  display: flex;
+  align-items: center;
 }
 
-#logo:hover, .textsec:hover {
-  transform: scale(1.15);
-}
 
-.section{
-  width: 30%;
-  text-align: center;
-}
 
-.textsec {
-  font-size: calc(1rem + 1vw);
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
 
 /*Formulaire*/
 
@@ -141,18 +128,17 @@ h1 {
 /*Fin de formulaire*/
 
 header {
+  position: relative !important;
   height: 10%;
   width: 100%;
   z-index: 200;
-  position: static;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+
 }
 
 #logo {
-  height: calc(3.75rem + 1vw);;
+  height: 75px;
   transition: 0.3s;
 }
 
@@ -160,10 +146,6 @@ header {
   transform: scale(1.2);
 }
 
-#home {
-  height: 50%;
-  
-}
 
 #global {
   display: flex;

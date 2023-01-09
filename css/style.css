@@ -14,20 +14,16 @@ header {
   position: absolute;
   display: flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 #logo {
-  height: 60px;
+  height: 75px;
   transition: 0.3s;
 }
 
 #logo:hover {
   transform: scale(1.2);
-}
-
-#home {
-  height: 50%;
-  margin-top: 25px;
 }
 
 #global {
@@ -126,6 +122,6 @@ a {
   }
 
   #logo{
-    height: 45px;
+    display: none;
   }
 }
