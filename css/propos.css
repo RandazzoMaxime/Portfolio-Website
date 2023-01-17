@@ -1,7 +1,6 @@
 body,
 html {
   width: 100%;
-  height: 100%;
   font-weight: 350;
   margin: 0;
   font-size: 1em;
@@ -22,14 +21,9 @@ header {
   background-color: #0A1724 !important;
 }
 
-#home{
-  height :100%;
-  display: flex;
-  align-items: center;
+#footer{
+  margin-top: 10vh !important;
 }
-
-
-
 
 /*Formulaire*/
 
@@ -76,13 +70,16 @@ input[type="submit"]:hover {
   background-color: #054579;
 }
 
+input{
+  transition: 0s !important;
+}
+
 #container-form {
-  visibility: hidden;
-  z-index: 5;
+  display: none;
+  z-index: 500;
   width: 100%;
   height: 100%;
   position: fixed;
-  display: flex;
   transition: 0.2s;
   opacity: 0%;
   justify-content: center;
@@ -160,7 +157,6 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
-  height: 100%;
   justify-content: center;
   margin-bottom: 4%;
   margin-top: 50px;
@@ -169,14 +165,14 @@ header {
 #img {
   display: flex;
   justify-content: center;
-  max-height: 100%;
+  max-width: 750px;
   flex: 1;
   margin: auto;
 }
 
 #photo {
   object-fit: cover;
-  max-width: 90%;
+  max-width: 70%;
   border: solid;
   border-color: white;
   border-width: 5px;
@@ -198,7 +194,6 @@ a {
 }
 
 #contact {
-  width: calc(1.3rem + 40vw);
   margin-top: 15px;
   margin: auto;
   background-color: #043156;
@@ -207,12 +202,11 @@ a {
   border-width: 10px 30px;
   border-radius: 30px;
   text-align: center;
-  vertical-align: middle;
   padding-bottom: 7px;
   transition: 0.4s;
   color: white;
   font-weight: 420;
-  font-size: calc(1.3rem + 0.8vw);
+  font-size: calc(1.2rem + 0.5vw);
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -224,14 +218,20 @@ a {
   background-color: white;
   color: #043156;
 }
-
-p {
-  font-size: calc(1.3rem + 0.9vw);
+.textprop
+{
+  font-size: calc(1.2rem + 0.5vw);
   text-align: center;
-  height: 100%;
-  }
+}
 
-@media (orientation: portrait) {
+@media (max-height: 620px)
+{
+  header{
+    height: 10vw !important;
+  }
+}
+
+@media (orientation: portrait) or (max-width: 600px) {
   header {
     flex-direction: column-reverse;
     gap: 20px;
@@ -252,6 +252,10 @@ p {
   #content {
     margin-top: 6%;
     margin-bottom: 2%;
+  }
+
+  p {
+  font-size: calc(1.2rem + 0.3vw);
   }
 
   #global {
