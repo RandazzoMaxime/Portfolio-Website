@@ -4,7 +4,7 @@ html {
   height: 100%;
   margin: 0;
   font-size: 1em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
   z-index: 3;
   position: absolute;
   display: flex;
-  justify-content: center;
+  align-items: unset !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -85,17 +85,20 @@ li{
   margin-inline-end: 0px;
   z-index: 2;
   position: absolute;
-  width: 100%;
+  width: 95%;
   text-align: center;
   transform-origin: bottom;
   bottom: 5%;
-  color: white;
-  font-size: 3vmin;
-  text-shadow: 1px 3px 5px #000000;
-  font-style: normal;
-  font-weight: 400;
 }
 
+h1{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  color: white;
+  font-size: calc(1rem + 0.7vw) !important;
+  text-shadow: 1px 3px 5px #000000;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
 
 
 a {
@@ -124,4 +127,12 @@ a {
   #logo{
     display: none;
   }
+}
+
+@media (max-height: 450px)
+{
+h1{
+  font-size: calc(1rem + 0.2vh) !important;
+}
+
 }

@@ -3,14 +3,19 @@
   <head>
     <title>Maxime Randazzo | Compétences</title>
     <meta charset="utf-8" />
+    <meta name="description" content="Je m'appelle Maxime Randazzo. J'étudie le développement web et aimerai en faire mon métier" />
+  <meta name="keywords" content="student, étudiant, Ajaccio, Corte, Corse, web, développement, html, css, php, javascript, code, HTML, CSS, JS, PHP, site, website, Corsica, technologie, numérique, internet, ligne, contenu, développeur, immobilier" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/png" href="assets/icons/Logo.png" />
     <link rel="stylesheet" type="text/css" href="css/burger.css">
     <link rel="stylesheet" type="text/css" href="css/competences.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/progress.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div id="global">
      
 <header>
@@ -23,8 +28,8 @@
     <span></span>
     <span></span>
     <ul id="menu">
-      <a class="MenuTitle" href="propos.html"><li>À propos</li></a>
-      <a class="MenuTitle" href="photographie.php"><li>Photographie</li></a>
+      <li class="MenuTitle"><a  href="propos.html">À propos</a></li>
+      <li class="MenuTitle"><a  href="photographie.php">Photographie</a></li>
     </ul>
   </div>
       </header>
@@ -32,28 +37,45 @@
       <div id="all-content">
         <div id="contenu-dev" class="content">
           <div id="text-dev">
-            <h1>MES COMPÉTENCES EN DÉVELOPPEMENT</h1>
+            <h1>MES COMPÉTENCES EN DÉVELOPPEMENT WEB</h1>
             <p>
               Ma formation et ma pratique personnelle me permettent d’être
-              aujourd’hui davantage Polyvalent et Autonome et de disposer de
+              aujourd’hui davantage polyvalent et autonome et de disposer de
               compétences, dont voici un aperçu :
             </p>
           </div>
 
           <div id="jaugeskill">
-            <div id="jauge">
-              <!--Jauges -->
-              <!--Items jauge-->
-              <div class="jaugelang">
-                <h4>HTML, CSS3</h4>
-                <progress class="skillbar" value="75" max="100"></progress>
-              </div>
-
-              <div class="jaugelang">
-                <h4>PHP, MYSQL, CMS WORDPRESS</h4>
-                <progress class="skillbar" value="50" max="100"></progress>
-              </div>
-            </div>
+                <div class="wrapper">
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">HTML & CSS</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">PHP</div>
+      </div>
+      <div class="card wordpress">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">CMS WORDPRESS</div>
+      </div>
+      <div class="card js">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">JavaScript</div>
+      </div>
+    </div>
 
             <div id="skillflex">
               <!--Skills-->
@@ -63,7 +85,7 @@
                   src="assets/icons/veille.png"
                   alt="Veille Technologique"
                 />
-                <p>Veille technologique</p>
+                <div class="bloc-atout"><h4>Veille technologique</h4></div>
               </div>
 
               <div class="skills">
@@ -72,7 +94,7 @@
                   src="assets/icons/projet.png"
                   alt="Gestion de Projet"
                 />
-                <p>Gestion de projet</p>
+                <div class="bloc-atout"><h4>Gestion de projet</h4></div>
               </div>
             </div>
           </div>
@@ -191,29 +213,52 @@
           </div>
         </div>
       </div>
-      <!--Footer-->
-      <div id="footer">
-        <div id="social">
-          <a
-            class="media"
-            id="insta"
-            href="https://www.instagram.com/maximerandazzophotos/"
-          ></a>
-          <a
-            class="media"
-            id="youtube"
-            href="https://www.youtube.com/channel/UC-tZa2NSHeHqNvt_giBY4Bw"
-          ></a>
-        </div>
+     <!--Footer-->
+    <div id="footer">
+      <div id="social">
+        <a
+          title="Compte Instagram"
+          class="media"
+          id="insta"
+          href="https://www.instagram.com/maximerandazzophotos/"
+        ></a>
+        <a
+          title = "Chaine YouTube"
+          class="media"
+          id="youtube"
+          href="https://www.youtube.com/channel/UC-tZa2NSHeHqNvt_giBY4Bw"
+        ></a>
+      </div>
 
-        <div id="copyright">
-          <p>
-            © 2022 Maxime Randazzo | Tous droits réservés. |
-            <a href="#" id="legals">Politique de confidentialité</a>
-          </p>
-        </div>
+      <div id="copyright">
+        <p>
+          © 2022 Maxime Randazzo | Tous droits réservés. |
+          <a href="legals.html" id="legals">Politique de confidentialité</a>
+        </p>
       </div>
     </div>
+
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.80,
+        fill: {gradient: ['#1006b3', '#0000c8', '#02add0']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".js .bar").circleProgress({
+        value: 0.20
+      });
+      $(".react .bar").circleProgress({
+        value: 0.60
+      });
+      $(".wordpress .bar").circleProgress({
+        value: 0.75
+      });
+    </script>
 
     <script type="text/javascript">
 //Changement de couleur du logo au déploiement
@@ -221,10 +266,16 @@
       var checkBox = document.getElementById("check");
   if (checkBox.checked == true) {
     document.getElementById("logo").style.fill = "black";
-  } else {
+    document.getElementById("body").style.position = "fixed";
+  } 
+  else {
     document.getElementById("logo").style.fill = "white";
+    document.getElementById("body").style.position = "relative";
   }
 }
 </script>
+
+
+
   </body>
 </html>
