@@ -28,6 +28,7 @@ a {
 }
 
 header {
+  background-color: #0A1724 !important;
   height: 10%;
   width: 100%;
   z-index: 3;

@@ -20,17 +20,17 @@ html {
 }
 
 p {
-  font-size: calc(1.1rem + 1.5vw);
+  font-size: calc(0.8rem + 0.7vw);
 }
 
 h1 {
-  font-size: calc(1.5rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
   padding-top: 25px;
   padding-bottom: 30px;
 }
 
 h4 {
-  font-size: calc(1.2rem + 1.5vw);
+  font-size: calc(1rem + 0.8vw);
   font-weight: 400;
   margin: 0;
   margin-left: 25px;
@@ -44,7 +44,9 @@ h1 {
 }
 
 #contenu-dev {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #text-dev {
@@ -60,13 +62,19 @@ h1 {
   margin-right: 50px;
   margin-left: 50px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 #jauge {
-  gap: 30px;
+    width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+#skillflex, #jauge {
+  gap: 25px;
 }
 
 .skills {
@@ -75,7 +83,6 @@ h1 {
 
 #skill-img-veille {
   width: 100px;
-  margin-bottom: 35px;
   transition: 0.5s;
 }
 
@@ -137,8 +144,7 @@ h1 {
 }
 
 .pj p {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   font-weight: 300;
   color: #0a1724;
   position: absolute;
@@ -151,6 +157,7 @@ h1 {
   border-color: white;
   border-style: solid;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   height: 50%;
@@ -211,11 +218,23 @@ h1 {
   transform: rotate(0deg);
 }
 
+.bloc-atout{
+  display: flex;
+  align-items: center;
+}
+
 /* Header */
 
 header{
   position: unset !important;
   background-color: #0A1724 !important;
+}
+
+@media (max-height: 620px)
+{
+  header{
+    height: 10vw !important;
+  }
 }
 
 #logo{
@@ -235,10 +254,10 @@ header{
 .softbar {
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 150px;
-  height: 25px;
+  width: 100px;
+  height: 20px;
   transform-origin: center;
-  translate: -100px 100px;
+  translate: -100px 75px;
   transform: rotate(-90deg);
 }
 
@@ -289,7 +308,7 @@ header{
 }
 
 .img-logo {
-  width: 150px;
+  width: 100px;
 }
 
 
@@ -325,11 +344,11 @@ a {
   .softbar {
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 110px;
+    width: 90px;
   }
 
   .img-logo {
-    width: 100px;
+    width: 80px;
   }
 
   .pj {
@@ -338,7 +357,7 @@ a {
   }
 
   .pj p {
-    font-size: calc(0.5rem + 1.5vw);
+    font-size: calc(0.5rem + 1.2vw);
   }
 
   .losange{
@@ -351,4 +370,12 @@ a {
 
 }
 
+}
+
+@media (min-width: 750px)
+{
+
+  #jauge {
+    width: 40%;
+  }
 }

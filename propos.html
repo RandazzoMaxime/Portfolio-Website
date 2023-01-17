@@ -2,59 +2,40 @@
 <html lang="fr">
   <head>
     <title>Maxime Randazzo | À Propos</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/icons/Logo.png" />
-    <link rel="stylesheet" type="text/css" href="css/propos.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <meta charset="utf-8" >
+    <meta name="description" content="Je m'appelle Maxime Randazzo, je suis un photographe basé en Corse, entre Corte et Ajaccio. J'étudie le développement web." >
+    <meta name="keywords" content="photographe, photographie, Ajaccio, Corte, Corse, photo, photos, expérience, images, mariage, baptême, bapteme, prestations, premium, portrait, paysage, évenements, event, Corsica, student, étudiant, web, développement, html, css, php, javascript, code, js , site, website, technologie, numérique, internet, ligne, contenu, développeur, immobilier" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="icon" type="image/png" href="assets/icons/Logo.png" >
+    <link rel="stylesheet" type="text/css" href="css/propos.css" >
+    <link rel="stylesheet" type="text/css" href="css/icons.css" >
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
     <link rel="stylesheet" type="text/css" href="css/burger.css">
 
-    <script type="text/javascript">
+    <script>
       function form(id) {
-        document.getElementById(id).style.visibility = "visible";
+        document.getElementById(id).style.display = "flex";
         document.getElementById("global").style.filter = "blur(5px)";
         document.getElementById(id).style.opacity = "100%";
-        document.getElementById("body").style.overflow = "hidden";
       }
       function closeform(id) {
         document.getElementById("submit").style.transition = "none";
         document.getElementById(id).style.opacity = "0%";
-        document.getElementById(id).style.visibility = "hidden";
+        document.getElementById(id).style.display = "none";
         document.getElementById("global").style.filter = "blur(0px)";
-        document.getElementById("body").style.overflow = "auto";
       }
     </script>
   </head>
 
   <body id="body">
 
-     <!-- Header -->
-     <header>
-      <a  id="home" href="index.html">
-        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89" style="fill: white;"><g id="a"/><g id="b"><g><path class="c" d="M310.93,226.65c0-2.85-2.32-5.16-5.18-5.14l-62.76,.39c-3.35,0-4.16,.91-5.03,3.39l-47.87,136.22c-.66,1.89-3.32,1.91-4.02,.04l-50.98-136.55c-1.25-3.48-5.71-4.12-9.11-4.1h-60.48c-1.18,0-2.14,.96-2.14,2.14v410.32c0,1.18,.96,2.14,2.14,2.14h61.55c1.18,0,2.14-.96,2.14-2.14v-233.79c0-2.39,3.33-2.98,4.15-.73,17.16,47.27,34.28,94.44,51.6,142.15,.68,1.87,3.32,1.88,4.01,.02,16.85-44.84,33.36-88.78,49.85-132.66l5.9,1.07,.19,224c0,1.18,.96,2.14,2.14,2.14l61.72-.03c1.18,0,2.14-.96,2.14-2.14l.02-406.74Z"/><path class="c" d="M450.39,568.79s-12.89-30.64-19.25-46c-1.9-4.58-10.04-6.17-10.04-6.17-65.17-.81-75.02,4.07-75.69-28.05-.17-8.43,.54-33.69,.54-33.69,.15-8.18,4.71-10.97,13.09-10.99,21.33-.04,42.66,.03,63.99-.03,40.75,1.78,72.43-36.44,67.62-76.03-9.54-73.56-79.23-66.41-135.69-66.11-12.05,.11-16.64-4.82-16.94-17.45-.34-14.49-.1-28.99-.06-43.49,.02-8.24,4.42-19.94,12.59-19.9h87.66c132.63,0,172.08,202.47,59.57,275.95,18.9,45.76,41.18,90.18,59.38,138.07l-78.16,.12-28.61-66.23Z"/></g></g></svg></a>
-       
-       <div id="menuToggle">
-    <input type="checkbox" id="check" onchange="color()" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <a class="MenuTitle" href="propos.html"><li>Mes compétences web</li></a>
-      <a class="MenuTitle" href="photographie.php"><li>Photographie</li></a>
-    </ul>
-  </div>
-      </header>
-
-      <!-- Fin du header -->
-
-    <div id="container-form">
+ <div id="container-form">
       <div id="formulaire">
-        <img
+        <img alt="fermer le formulaire" 
           id="closeform"
           src="assets/icons/croix.png"
           onclick="closeform('container-form')"
-        />
+        >
         <h1>Formulaire de contact</h1>
         <form action="mail.php" method="post" id="scroll">
           <label for="fname">Nom & prénom</label>
@@ -63,7 +44,7 @@
             id="fname"
             name="firstname"
             placeholder="Votre nom et prénom"
-          />
+          >
 
           <label for="sujet">Sujet</label>
           <input
@@ -71,7 +52,7 @@
             id="sujet"
             name="sujet"
             placeholder="L'objet de votre message"
-          />
+          >
 
           <label for="emailAddress">Email</label>
           <input
@@ -79,7 +60,7 @@
             type="email"
             name="email"
             placeholder="Votre email"
-          />
+          >
 
           <label for="subject">Message</label>
           <textarea
@@ -89,10 +70,32 @@
             style="height: 100px;"
           ></textarea>
 
-          <input id="submit" type="submit" value="Envoyer" name="valider" />
+          <input id="submit" type="submit" value="Envoyer" name="valider" >
         </form>
       </div>
     </div>
+
+
+     <!-- Header -->
+     <header>
+      <a  id="home" href="index.html" title="Retour à la page d'accueil">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89" style="fill: white;"><g id="a"/><g id="b"><g><path class="c" d="M310.93,226.65c0-2.85-2.32-5.16-5.18-5.14l-62.76,.39c-3.35,0-4.16,.91-5.03,3.39l-47.87,136.22c-.66,1.89-3.32,1.91-4.02,.04l-50.98-136.55c-1.25-3.48-5.71-4.12-9.11-4.1h-60.48c-1.18,0-2.14,.96-2.14,2.14v410.32c0,1.18,.96,2.14,2.14,2.14h61.55c1.18,0,2.14-.96,2.14-2.14v-233.79c0-2.39,3.33-2.98,4.15-.73,17.16,47.27,34.28,94.44,51.6,142.15,.68,1.87,3.32,1.88,4.01,.02,16.85-44.84,33.36-88.78,49.85-132.66l5.9,1.07,.19,224c0,1.18,.96,2.14,2.14,2.14l61.72-.03c1.18,0,2.14-.96,2.14-2.14l.02-406.74Z"/><path class="c" d="M450.39,568.79s-12.89-30.64-19.25-46c-1.9-4.58-10.04-6.17-10.04-6.17-65.17-.81-75.02,4.07-75.69-28.05-.17-8.43,.54-33.69,.54-33.69,.15-8.18,4.71-10.97,13.09-10.99,21.33-.04,42.66,.03,63.99-.03,40.75,1.78,72.43-36.44,67.62-76.03-9.54-73.56-79.23-66.41-135.69-66.11-12.05,.11-16.64-4.82-16.94-17.45-.34-14.49-.1-28.99-.06-43.49,.02-8.24,4.42-19.94,12.59-19.9h87.66c132.63,0,172.08,202.47,59.57,275.95,18.9,45.76,41.18,90.18,59.38,138.07l-78.16,.12-28.61-66.23Z"/></g></g></svg></a>
+       
+       <div id="menuToggle">
+    <input type="checkbox" id="check" onchange="color()" >
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <li class="MenuTitle"><a  href="competences.html">Mes compétences web</a></li>
+      <li class="MenuTitle"><a href="photographie.php">Photographie</a></li>
+    </ul>
+  </div>
+      </header>
+
+      <!-- Fin du header -->
+
+   
     <div id="global">
      
       <div id="container">
@@ -101,55 +104,61 @@
             id="photo"
             src="assets/photos/propos.jpg"
             alt="Photo de profil"
-          />
+          >
         </div>
         <div id="content">
-          <p>
+          <span class="textprop">
             Je m’appelle Maxime Randazzo, je souhaite devenir développeur Web et
-            je suis également un passionné de photographie.</p>
-            <p>
-            Ma soif de savoir motive ma curiosité dans tous domaine !
-            </p>
-            <p>
+            je suis également un passionné de photographie. <br><br>
+            Ma soif de savoir motive ma curiosité dans tous les domaines ! <br><br>
             J’ai 18 ans et je suis basé en Corse, entre Corte et Ajaccio.
-          </p>
+          </span>
 
           
         </div>
       </div>
 
 <div id="contact" onclick="form('container-form')">Me contacter par mail</div>
-      <!--Footer-->
-      <div id="footer">
-        <div id="social">
-          <a
-            class="media"
-            id="insta"
-            href="https://www.instagram.com/maximerandazzophotos/"
-          ></a>
-          <a
-            class="media"
-            id="youtube"
-            href="https://www.youtube.com/channel/UC-tZa2NSHeHqNvt_giBY4Bw"
-          ></a>
-        </div>
+    
+    </div>
 
-        <div id="copyright">
-          <p>
-            © 2022 Maxime Randazzo | Tous droits réservés. |
-            <a href="#" id="legals">Politique de confidentialité</a>
-          </p>
-        </div>
+ <!--Footer-->
+    <div id="footer">
+      <div id="social">
+        <a
+          title="Compte Instagram"
+          class="media"
+          id="insta"
+          href="https://www.instagram.com/maximerandazzophotos/"
+        ></a>
+        <a
+          title = "Chaine YouTube"
+          class="media"
+          id="youtube"
+          href="https://www.youtube.com/channel/UC-tZa2NSHeHqNvt_giBY4Bw"
+        ></a>
+      </div>
+
+      <div id="copyright">
+        <p>
+          © 2022 Maxime Randazzo | Tous droits réservés. |
+          <a href="#" id="legals">Politique de confidentialité</a>
+        </p>
       </div>
     </div>
-<script type="text/javascript">
+
+    
+<script>
 //Changement de couleur du logo au déploiement
       function color() {
       var checkBox = document.getElementById("check");
   if (checkBox.checked == true) {
     document.getElementById("logo").style.fill = "black";
-  } else {
+    document.getElementById("body").style.position = "fixed";
+  } 
+  else {
     document.getElementById("logo").style.fill = "white";
+    document.getElementById("body").style.position = "relative";
   }
 }
 </script>

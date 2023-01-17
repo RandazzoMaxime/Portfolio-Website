@@ -1,8 +1,6 @@
-* {
-  color: white !important;
-}
-
 body {
+  transition: all 1s ease-in-out;
+  overflow-y: scroll;
   color: white !important;
   animation: fadeIn 1s;
   overflow-x: hidden;
@@ -21,6 +19,8 @@ body {
 }
 
 header {
+  min-height: 50px;
+  max-height: 75px;
   position: absolute;
   width: 100%;
   display: flex;
@@ -29,6 +29,14 @@ header {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (max-height: 620px)
+{
+  header{
+    height: 10vw;
+  }
+}
+
 
 @media (orientation: portrait)
 {
@@ -50,7 +58,7 @@ header {
 }
 
 #footer p {
-  font-size: calc(0.6rem + 0.6vw) !important;
+  font-size: calc(0.7rem + 0.6vw) !important;
 }
 
 #footer {
